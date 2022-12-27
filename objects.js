@@ -18,21 +18,63 @@ const example = {
   }
   
   // Write your intern objects here:
-  
+const info1= {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F",
+}
+console.log(info1)
+
+//-------------------
+const info2 = {
+  id: 2,
+  name: "kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "m",
+}
+console.log(info2)
+
+//------------------
+const info3 = {
+  id: 3,
+  name: "keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "m",
+}
+console.log(info3)
+
+//------------------
+const info4= {
+  id: 4,
+  name: "Gannie",
+  email: "kmummery2@wikimedia.org",
+  gender: "m",
+}
+console.log(info4)
+
+//------------------------
+const info5 = {
+  id: 5,
+  name: " Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "f",
+}
+console.log(info5)
   
   // ==== Challenge 2: Reading Object Data ==== 
   // Once your objects are created, log out the following requests from HR into the console:
   
   // Mitzi's name
-  
+ console.log(info1.name)
   // Kennan's ID
-  
+  console.log(info2.id)
   // Keven's email
-  
+  console.log(info3.email)
   // Gannie's name
-  
+  console.log(info4.name)
   // Antonietta's Gender
-  
+  console.log(info5.gender)
   // ==== Challenge 3: Object Methods ==== 
   // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
   // console.log(kennan.speak());
@@ -49,16 +91,44 @@ const example = {
   // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
   // 4. Give each of the objects the ability to speak their names using the this keyword.
   
-  const parent = {}
+  const parent = {
+    "name": "Susan",
+    "age": "70",
+    "child": {
+      "name": "George",
+      "age": "50",
+      "grandchild": {
+        "name": "Sam",
+        "age": "30",
+      }
+    }
+  }
+  
   
   // Log the parent object's name
-  
+  console.log(parent.name)
   // Log the child's age
+console.log(parent.child.age)
   
   // Log the name and age of the grandchild
+  console.log(parent.child.grandchild.name)
   
   // Have the parent speak
+  parent.speak=function(){
+    return "hello there, my children!"
+  }
+  console.log(parent.speak)
   
   // Have the child speak
+  parent.child.speak = function () {
+  return "Hello mom, hello dad, hello children!"
+}
+
+console.log(parent.child.speak());
   
   // Have the grandchild speak
+parent.child.grandchild.speak = function () {
+  return "Hello, I am so small and young"
+}
+
+console.log(parent.child.grandchild.speak());

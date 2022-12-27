@@ -8,10 +8,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply ( a,b/*add your code here*/){
+    /*add your code here*/return a*b
   }
-
+console.log(multiply(3,6))
 
 /*
 
@@ -25,9 +25,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(humanAge/*add your code here*/){
+    /*add your code here*/ let catAge=humanAge/7
+    return catAge
 }
+console.log(catYears(70))
 
 
 
@@ -62,8 +64,23 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+let myFunction=()=>{
+  console.log("Function was invoked!")
+}
+myFunction()
 
+//--------------------
+let anotherFunction=(param)=> {
+  return param
+}
+  
+console.log(anotherFunction("Example"))
 
+//----------------------
+let add=(param1,param2)=>{
+  return param1+param2
+}
+console.log(add(3,8))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
